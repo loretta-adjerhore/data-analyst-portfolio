@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GenexaHealth: Warfarin Precision Dosing Analytics - Loretta Adjerhore</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background-color: #0A192F !important;
+			}
+
+			.tool-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 15px 0 25px 0;
+			}
+			.tool-tag {
+				background-color: #64FFDA;
+				color: #0A192F;
+				padding: 6px 16px;
+				border-radius: 20px;
+				font-weight: 700;
+				font-size: 0.85em;
+				letter-spacing: 0.5px;
+			}
+
+			.section-divider {
+				border: none;
+				border-top: 1px solid rgba(100, 255, 218, 0.2);
+				margin: 40px 0;
+			}
+
+			.image-caption {
+				text-align: center;
+				font-style: italic;
+				color: #8892B0;
+				font-size: 0.9em;
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+
+			.metrics-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+				margin: 30px 0;
+			}
+			.metric-card {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.3);
+				border-radius: 8px;
+				padding: 25px 20px;
+				text-align: center;
+			}
+			.metric-number {
+				font-size: 2em;
+				font-weight: 900;
+				color: #64FFDA;
+				display: block;
+				margin-bottom: 8px;
+			}
+			.metric-label {
+				font-size: 0.85em;
+				color: #8892B0;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.highlight-box {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				border-radius: 0 8px 8px 0;
+				padding: 20px 25px;
+				margin: 25px 0;
+			}
+			.highlight-box p {
+				margin: 0;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.highlight-box strong {
+				color: #64FFDA;
+			}
+
+			.steps-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 20px;
+				margin: 25px 0;
+			}
+			.step-box {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.2);
+				border-top: 4px solid #64FFDA;
+				border-radius: 8px;
+				padding: 25px;
+			}
+			.step-number {
+				color: #64FFDA;
+				font-size: 1.5em;
+				font-weight: 900;
+				display: block;
+				margin-bottom: 10px;
+			}
+			.step-box h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.step-box p {
+				color: #CCD6F6;
+				font-size: 0.95em;
+				line-height: 1.8;
+				margin: 0;
+			}
+
+			.insight-card {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				padding: 25px;
+				margin: 20px 0;
+				border-radius: 0 8px 8px 0;
+			}
+			.insight-card h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.insight-card p {
+				color: #CCD6F6;
+				line-height: 1.8;
+				margin: 0;
+			}
+			.insight-card strong {
+				color: #64FFDA;
+			}
+			.insight-card ul {
+				color: #CCD6F6;
+				margin: 10px 0 0 20px;
+				padding: 0;
+			}
+			.insight-card ul li {
+				margin-bottom: 8px;
+				line-height: 1.8;
+			}
+
+			.impact-wrapper {
+				background: #0A192F;
+				border-radius: 8px;
+				padding: 10px 25px;
+				margin: 20px 0;
+			}
+			.impact-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.impact-list li {
+				padding: 14px 0 14px 35px;
+				border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+				position: relative;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.impact-list li:last-child {
+				border-bottom: none;
+			}
+			.impact-list li:before {
+				content: "✓";
+				color: #64FFDA;
+				position: absolute;
+				left: 0;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+			.impact-list strong {
+				color: #64FFDA;
+			}
+
+			@media (max-width: 768px) {
+				.metrics-grid { grid-template-columns: repeat(2, 1fr); }
+				.steps-grid { grid-template-columns: 1fr; }
+			}
+			@media (max-width: 480px) {
+				.metrics-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Loretta Adjerhore</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects-tools.html">Projects by Tools</a></li>
+					<li><a href="about.html">About Me</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/loretta-adjerhore" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:lorettaadjerhore@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+
+					<header class="major">
+						<span class="date">Healthcare Analytics</span>
+						<h1>GenexaHealth | Warfarin Precision Dosing Analytics</h1>
+						<p>Analyzing 50,000 patient records to expose critical medication safety failures and deliver a data-driven precision dosing framework projected to save $20–100M annually through improved warfarin safety protocols and clinical decision support.</p>
+					</header>
+
+					<a class="image main">
+						<img src="images/genexa-dashboard.jpg" alt="GenexaHealth Warfarin Dosing Analytics Dashboard" />
+					</a>
+					<p class="image-caption">GenexaHealth Warfarin Dosing Analytics Dashboard — Comprehensive analysis of 50,000 patient records revealing a 16.53% adverse event rate and systemic dosing failures requiring immediate protocol intervention</p>
+
+					<div class="tool-tags">
+						<span class="tool-tag">Power BI</span>
+						<span class="tool-tag">DAX</span>
+						<span class="tool-tag">Healthcare Analytics</span>
+						<span class="tool-tag">Statistical Analysis</span>
+						<span class="tool-tag">Clinical Decision Support</span>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>1. The Business Problem</h2>
+
+					<p>GenexaHealth is a regional healthcare system serving a diverse patient population requiring chronic anticoagulation therapy with warfarin — a life-saving but notoriously difficult medication with a narrow therapeutic window and 10-fold inter-patient dose variability. Despite being one of the most prescribed drugs in the United States, warfarin remains one of the leading causes of medication-related hospitalizations and adverse events.</p>
+
+					<p>The healthcare system was operating on a population-average dosing protocol — a fundamentally flawed approach that ignores genetic, demographic, lifestyle, and clinical factors that profoundly influence each patient's optimal dose. Leadership suspected this one-size-fits-all strategy was leading to patient harm, but had no data-driven framework to quantify the scale of the problem, identify high-risk subgroups, or measure the financial and clinical impact of dosing failures.</p>
+
+					<div class="highlight-box">
+						<p><strong>The core challenge:</strong> Current practice uses a standard 5mg starting dose for all patients despite overwhelming evidence that individual patients require doses ranging from 0.5mg to 20mg — a 40-fold variability driven by genetic polymorphisms (CYP2C9, VKORC1), age, weight, comorbidities, and lifestyle factors. This population-average approach was causing systematic patient harm, with 1 in 6 patients experiencing bleeding complications or thromboembolic events. The business needed a precision medicine framework that could deliver the right dose to the right patient — and quantify the clinical and financial impact of getting dosing right the first time.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>2. Key Performance Metrics</h2>
+
+					<div class="metrics-grid">
+						<div class="metric-card">
+							<span class="metric-number">50,000</span>
+							<span class="metric-label">Patient Records Analyzed</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">8,264</span>
+							<span class="metric-label">Patients Harmed</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">16.53%</span>
+							<span class="metric-label">Adverse Event Rate</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">7.7 days</span>
+							<span class="metric-label">Avg. Days to Stable Dose</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">3.29mg</span>
+							<span class="metric-label">Avg. Stable Dose vs 5mg Standard</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">70.3%</span>
+							<span class="metric-label">Time in Therapeutic Range</span>
+						</div>
+					</div>
+
+					<div class="highlight-box">
+						<p>The 16.53% adverse event rate sits above the industry benchmark of 12–14%, confirming systematic protocol failures. The average stable dose of 3.29mg is <strong>34% below the traditional 5mg starting dose</strong>, proving that one-size-fits-all dosing is fundamentally unsafe for the majority of patients.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>3. Analytical Methodology</h2>
+
+					<div class="steps-grid">
+						<div class="step-box">
+							<span class="step-number">01</span>
+							<h4>Data Preparation</h4>
+							<p>Cleaned and validated all 50,000 patient records. Integrated genetic markers (CYP2C9, VKORC1), clinical history, comorbidities, and lifestyle data into a unified analytical dataset. Created calculated risk-scoring fields to enable multi-dimensional segmentation analysis.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">02</span>
+							<h4>Exploratory Analysis</h4>
+							<p>Investigated dose distribution patterns across patient populations, performed adverse event correlation analysis across 15+ dimensions, and conducted demographic and genetic segmentation to identify high-risk groups requiring enhanced monitoring protocols.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">03</span>
+							<h4>Dashboard Development</h4>
+							<p>Built interactive Power BI reporting with real-time filtering across 6 dimensions: Age Group, Sex, Ethnicity, Risk Group, Genetic Profile, and Lifestyle Factors. Enabled multi-dimensional analysis and patient risk stratification for clinical decision support.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">04</span>
+							<h4>Clinical Recommendations</h4>
+							<p>Identified high-risk patient groups requiring immediate protocol changes. Developed evidence-based precision dosing recommendations with projected cost-benefit analysis and ROI projections for clinical implementation and system-wide rollout.</p>
+						</div>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>4. Key Insights</h2>
+
+					<div class="insight-card">
+						<h4>Insight 1 — 48.6% of Patients Need Low Doses (<3mg), Yet Standard Protocol Starts Everyone at 5mg</h4>
+						<p>Dose distribution analysis revealed that <strong>nearly half of all patients (48.6%) require stable doses below 3mg</strong> — yet current protocol initiates everyone at 5mg, creating immediate overdosing risk for these individuals. Only 14.2% of patients actually need doses at or above the 5mg standard, while 37.2% fall in the 3–5mg range. This fundamental mismatch between protocol and patient need is the primary driver of the 16.53% adverse event rate, as low-dose patients are systematically overdosed during the critical first 7–10 days of therapy when bleeding risk is highest.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/genexa-dose-chart.jpg" alt="GenexaHealth Dose Distribution Analysis" />
+					</a>
+					<p class="image-caption">Dose Distribution Analysis — 48.6% of patients require <3mg stable doses, yet the standard 5mg protocol systematically overdoses this nearly-half patient population</p>
+
+					<div class="insight-card">
+						<h4>Insight 2 — Three High-Risk Groups Drive 50%+ of All Adverse Events</h4>
+						<p>Segmentation analysis identified three patient subgroups with dramatically elevated adverse event rates: <strong>Chronic Kidney Disease (CKD) patients at 18.87%</strong>, elderly patients 76+ years at 16.82%, and those on amiodarone at 15.94%. Together, these three groups represent only 28% of the total patient population but account for more than half of all adverse events. The CKD cohort is particularly alarming — nearly 1 in 5 patients experiences a serious complication. These groups require enhanced monitoring, lower starting doses, and more frequent INR testing during the critical dose-finding period.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/genexa-risk-groups.jpg" alt="GenexaHealth High-Risk Group Analysis" />
+					</a>
+					<p class="image-caption">High-Risk Group Analysis — CKD patients (18.87%), elderly 76+ (16.82%), and amiodarone users (15.94%) driving 50%+ of all adverse events despite representing only 28% of population</p>
+
+					<div class="insight-card">
+						<h4>Insight 3 — Smoking + Alcohol Creates a 5.5x Adverse Event Risk Multiplier</h4>
+						<p>Lifestyle factor analysis uncovered a critical interaction effect: patients who both smoke and consume alcohol regularly experience a <strong>5.5x higher adverse event rate compared to those with neither risk factor</strong>. This finding is especially concerning because these lifestyle factors are often overlooked in clinical protocols despite being readily identifiable at intake. The data shows that 12.4% of the patient population has this dual exposure, yet there is no systematic screening or protocol adjustment for this high-risk cohort. Implementing targeted screening and dose reduction for dual-exposure patients could prevent 800–1,000 adverse events annually.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/genexa-lifestyle.jpg" alt="GenexaHealth Lifestyle Risk Factor Analysis" />
+					</a>
+					<p class="image-caption">Lifestyle Risk Factor Analysis — Smoking + alcohol combination creates a 5.5x adverse event multiplier affecting 12.4% of patient population</p>
+
+					<hr class="section-divider" />
+
+					<h2>5. Quantified Business Impact</h2>
+
+					<div class="impact-wrapper">
+						<ul class="impact-list">
+							<li>Analyzed <strong>50,000 patient records</strong> to deliver the first comprehensive view of warfarin dosing safety across the entire healthcare system</li>
+							<li>Documented <strong>8,264 patients experiencing adverse events</strong> — a 16.53% rate above the 12–14% industry benchmark, confirming systematic protocol failures</li>
+							<li>Identified <strong>48.6% of patients requiring low doses (<3mg)</strong> yet systematically overdosed by the 5mg standard protocol</li>
+							<li>Exposed <strong>three high-risk groups (CKD, elderly 76+, amiodarone users) driving 50%+ of adverse events</strong> despite representing only 28% of population</li>
+							<li>Uncovered <strong>smoking + alcohol lifestyle combination creating 5.5x adverse event risk</strong> affecting 12.4% of patients with no current screening protocol</li>
+							<li>Projected <strong>$20–100M annual cost savings</strong> through precision dosing reducing hospitalizations, ER visits, and long-term complications</li>
+							<li>Estimated <strong>25%+ adverse event reduction achievable</strong> through pharmacogenomic testing and enhanced high-risk protocols (2,066+ complications prevented annually)</li>
+							<li>Built interactive Power BI dashboard enabling <strong>clinical decision support</strong> across 6 filtering dimensions for real-time patient risk stratification</li>
+						</ul>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>6. Strategic Recommendations</h2>
+
+					<div class="insight-card">
+						<h4>Recommendation 1 — Mandatory Pharmacogenomic Testing for All New Warfarin Patients</h4>
+						<p>Implement CYP2C9 and VKORC1 genotyping for all patients initiating warfarin therapy. These two genetic markers explain 40–50% of dose variability and can predict which patients need low-dose (<3mg) versus standard-dose protocols. Projected cost: $100–150 per test. Projected benefit: 15–20% reduction in adverse events (1,200–1,600 complications prevented annually), $15–25M in avoided hospitalization costs, 2–3 day reduction in time to stable dose. ROI: 10–20x within first year.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 2 — Enhanced Protocols for Three High-Risk Groups</h4>
+						<p>Implement mandatory protocol modifications for CKD patients, elderly 76+, and amiodarone users: (1) Reduce starting dose to 3mg or lower, (2) Increase INR monitoring frequency to every 2–3 days during first 2 weeks, (3) Implement clinical pharmacist co-management for dose adjustments. Projected impact: 30–40% adverse event reduction in these cohorts (1,000–1,400 complications prevented), $10–15M cost savings from avoided ER visits and hospitalizations.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 3 — Lifestyle Factor Screening & Intervention</h4>
+						<p>Add standardized smoking and alcohol screening to all warfarin intake protocols. Flag dual-exposure patients (12.4% of population) for enhanced monitoring and patient education on interaction risks. Consider dose reduction for dual-exposure cohort. Implement smoking cessation and alcohol reduction counseling as part of anticoagulation management. Projected impact: 400–600 complications prevented annually in dual-exposure cohort, improved long-term adherence and outcomes.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 4 — Age-Stratified Dosing Protocols</h4>
+						<p>Replace the one-size-fits-all 5mg standard with age-stratified starting doses: <65 years = 5mg, 65–75 years = 4mg, 76+ years = 3mg or lower. This simple modification aligns with the finding that elderly patients systematically require lower doses and experience higher adverse event rates. Projected impact: 20–25% reduction in elderly patient complications (400–500 events prevented), minimal implementation cost, immediate applicability without genetic testing infrastructure.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<ul class="actions special" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+						<li><a href="index.html" class="button">← Back to Home</a></li>
+						<li><a href="project-pharma.html" class="button primary">Next: NovaMed →</a></li>
+					</ul>
+
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section>
+					<h3>Interested in Working Together?</h3>
+					<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes.</p>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>London, United Kingdom</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:07719396377">07719 396 377</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:lorettaadjerhore@gmail.com">lorettaadjerhore@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/loretta-adjerhore" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Loretta Adjerhore 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

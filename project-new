@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Laural Adjerhore - Data Analyst Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Laural Adjerhore</h1>
+						<p>Data Analyst | SQL • Power BI • Python • Tableau<br />
+						Healthcare & Pharmaceutical Analytics Specialist</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Laural Adjerhore</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="projects-industry.html">Projects by Industry</a></li>
+							<li><a href="projects-tools.html">Projects by Tools</a></li>
+							<li><a href="about.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/loretta-adjerhore" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:lorettaadjerhore@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Welcome Section -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Welcome to My Portfolio</h2>
+									<p>This portfolio showcases my work as a Data Analyst with 7 months of commercial experience across healthcare, pharmaceutical distribution, retail, and logistics sectors. Each project demonstrates my ability to transform complex data into actionable business insights that drive measurable impact.</p>
+									<p>My unique combination of a Pharmacology background, MBA, and technical analytics expertise allows me to bridge the gap between technical execution and strategic business outcomes.</p>
+								</header>
+							</article>
+
+						<!-- Impact at a Glance -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>Impact at a Glance</h2>
+									</header>
+									<ul style="list-style: none; padding: 0;">
+										<li style="margin-bottom: 20px;">
+											<h3 style="color: #64FFDA; margin-bottom: 5px;">$20-100M</h3>
+											<p style="margin: 0;">Potential annual savings identified through healthcare analytics</p>
+										</li>
+										<li style="margin-bottom: 20px;">
+											<h3 style="color: #64FFDA; margin-bottom: 5px;">£71.3M</h3>
+											<p style="margin: 0;">Pharmaceutical distribution data reconciled and analyzed</p>
+										</li>
+										<li style="margin-bottom: 20px;">
+											<h3 style="color: #64FFDA; margin-bottom: 5px;">40%</h3>
+											<p style="margin: 0;">Reduction in manual reconciliation time through automation</p>
+										</li>
+										<li style="margin-bottom: 20px;">
+											<h3 style="color: #64FFDA; margin-bottom: 5px;">50,000+</h3>
+											<p style="margin: 0;">Patient records analyzed for clinical decision support</p>
+										</li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<h2>Explore My Work</h2>
+									</header>
+									<p><strong>By Industry:</strong> View projects organized by sector to see cross-industry versatility and domain expertise in healthcare, pharmaceutical distribution, retail analytics, and logistics operations.</p>
+									<ul class="actions special">
+										<li><a href="projects-industry.html" class="button">View Projects by Industry</a></li>
+									</ul>
+									
+									<p style="margin-top: 30px;"><strong>By Technical Tools:</strong> Explore projects grouped by the tools and technologies used, showcasing proficiency in SQL, Power BI, Python, Tableau, and Excel.</p>
+									<ul class="actions special">
+										<li><a href="projects-tools.html" class="button">View Projects by Tools</a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Professional Approach -->
+							<article class="post">
+								<header class="major">
+									<h2>My Approach</h2>
+								</header>
+								<p>I believe great analytics isn't just about technical proficiency—it's about understanding the business context, asking the right questions, and delivering insights that stakeholders can actually use. Whether working with clean, structured data or tackling messy, incomplete datasets, I focus on delivering business impact.</p>
+								<p>My diverse background allows me to translate complex analytical findings into clear, actionable recommendations that resonate with both technical and non-technical audiences.</p>
+								<ul class="actions special">
+									<li><a href="about.html" class="button large">Learn More About Me</a></li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h3>Let's Connect</h3>
+							<p>I'm actively seeking Data Analyst opportunities where I can apply my cross-industry experience and unique skill set to drive business impact. If you're looking for an analyst who combines technical expertise with strategic business thinking, let's talk.</p>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>London, United Kingdom</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:07719396377">07719 396 377</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:lorettaadjerhore@gmail.com">lorettaadjerhore@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/loretta-adjerhore" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Laural Adjerhore 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NextGen Corp: Employee Success Analytics - Loretta Adjerhore</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background-color: #0A192F !important;
+			}
+
+			.tool-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 15px 0 25px 0;
+			}
+			.tool-tag {
+				background-color: #64FFDA;
+				color: #0A192F;
+				padding: 6px 16px;
+				border-radius: 20px;
+				font-weight: 700;
+				font-size: 0.85em;
+				letter-spacing: 0.5px;
+			}
+
+			.section-divider {
+				border: none;
+				border-top: 1px solid rgba(100, 255, 218, 0.2);
+				margin: 40px 0;
+			}
+
+			.image-caption {
+				text-align: center;
+				font-style: italic;
+				color: #8892B0;
+				font-size: 0.9em;
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+
+			.metrics-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+				margin: 30px 0;
+			}
+			.metric-card {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.3);
+				border-radius: 8px;
+				padding: 25px 20px;
+				text-align: center;
+			}
+			.metric-number {
+				font-size: 2em;
+				font-weight: 900;
+				color: #64FFDA;
+				display: block;
+				margin-bottom: 8px;
+			}
+			.metric-label {
+				font-size: 0.85em;
+				color: #8892B0;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.highlight-box {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				border-radius: 0 8px 8px 0;
+				padding: 20px 25px;
+				margin: 25px 0;
+			}
+			.highlight-box p {
+				margin: 0;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.highlight-box strong {
+				color: #64FFDA;
+			}
+
+			.steps-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 20px;
+				margin: 25px 0;
+			}
+			.step-box {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.2);
+				border-top: 4px solid #64FFDA;
+				border-radius: 8px;
+				padding: 25px;
+			}
+			.step-number {
+				color: #64FFDA;
+				font-size: 1.5em;
+				font-weight: 900;
+				display: block;
+				margin-bottom: 10px;
+			}
+			.step-box h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.step-box p {
+				color: #CCD6F6;
+				font-size: 0.95em;
+				line-height: 1.8;
+				margin: 0;
+			}
+
+			.insight-card {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				padding: 25px;
+				margin: 20px 0;
+				border-radius: 0 8px 8px 0;
+			}
+			.insight-card h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.insight-card p {
+				color: #CCD6F6;
+				line-height: 1.8;
+				margin: 0;
+			}
+			.insight-card strong {
+				color: #64FFDA;
+			}
+			.insight-card ul {
+				color: #CCD6F6;
+				margin: 10px 0 0 20px;
+				padding: 0;
+			}
+			.insight-card ul li {
+				margin-bottom: 8px;
+				line-height: 1.8;
+			}
+
+			.impact-wrapper {
+				background: #0A192F;
+				border-radius: 8px;
+				padding: 10px 25px;
+				margin: 20px 0;
+			}
+			.impact-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.impact-list li {
+				padding: 14px 0 14px 35px;
+				border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+				position: relative;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.impact-list li:last-child {
+				border-bottom: none;
+			}
+			.impact-list li:before {
+				content: "✓";
+				color: #64FFDA;
+				position: absolute;
+				left: 0;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+			.impact-list strong {
+				color: #64FFDA;
+			}
+
+			@media (max-width: 768px) {
+				.metrics-grid { grid-template-columns: repeat(2, 1fr); }
+				.steps-grid { grid-template-columns: 1fr; }
+			}
+			@media (max-width: 480px) {
+				.metrics-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Loretta Adjerhore</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects-tools.html">Projects by Tools</a></li>
+					<li><a href="about.html">About Me</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/loretta-adjerhore" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:lorettaadjerhore@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+
+					<header class="major">
+						<span class="date">HR Analytics</span>
+						<h1>NextGen Corp | Employee Success Analytics</h1>
+						<p>SQL-powered analysis of 197 employees uncovering $800K–$1.2M in preventable turnover costs driven by systematic compensation failures and a 150% Engineering department attrition crisis requiring immediate intervention.</p>
+					</header>
+
+					<a class="image main">
+						<img src="images/nextgen-sql.jpg" alt="NextGen Corp SQL Analysis" />
+					</a>
+					<p class="image-caption">NextGen Corp Turnover Analysis — PostgreSQL query revealing Engineering department's 150% turnover rate (9 departed, only 6 remain) creating existential capability risk</p>
+
+					<div class="tool-tags">
+						<span class="tool-tag">PostgreSQL</span>
+						<span class="tool-tag">SQL</span>
+						<span class="tool-tag">HR Analytics</span>
+						<span class="tool-tag">Business Intelligence</span>
+						<span class="tool-tag">Strategic Consulting</span>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>1. The Business Problem</h2>
+
+					<p>NextGen Corp is a growing technology company specializing in innovative software and hardware solutions. The company's competitive advantage relies heavily on attracting and retaining top talent while maintaining high employee satisfaction. Despite operating in a thriving tech sector with strong revenue growth, the business was experiencing unsustainable employee turnover that threatened operational continuity and long-term competitiveness.</p>
+
+					<p>Leadership recognized that something was fundamentally broken — high-performing employees were departing at alarming rates, recruitment costs were escalating, and institutional knowledge was hemorrhaging across multiple departments. However, they had no data-driven framework to diagnose root causes, quantify financial impact, or prioritize interventions. HR decisions were being made reactively based on anecdotes rather than systematic analysis.</p>
+
+					<div class="highlight-box">
+						<p><strong>The converging crises:</strong> Rising employee turnover was disrupting operations and driving recruitment costs through unsustainable escalation. Performance varied wildly across departments with no clear understanding of underlying drivers or intervention points. Salary structures showed no correlation with performance levels or competitive market rates — creating systematic unfairness that was bleeding top talent to competitors. And critically, <strong>leadership had no visibility into which employees were at highest flight risk</strong>, preventing proactive retention efforts and forcing expensive reactive hiring cycles.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>2. Key Performance Metrics</h2>
+
+					<div class="metrics-grid">
+						<div class="metric-card">
+							<span class="metric-number">197</span>
+							<span class="metric-label">Current Employees</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">89</span>
+							<span class="metric-label">Turnover Records Analyzed</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">591</span>
+							<span class="metric-label">Performance Evaluations</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">$4.85M</span>
+							<span class="metric-label">Total Annual Compensation</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">150%</span>
+							<span class="metric-label">Engineering Turnover Rate</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">12</span>
+							<span class="metric-label">Complex SQL Queries</span>
+						</div>
+					</div>
+
+					<div class="highlight-box">
+						<p>The 150% Engineering turnover rate is not a typo — more engineers departed (9) than currently remain (6), representing an existential threat to core technical capability. This single department's attrition crisis alone represents <strong>$300K–$450K in replacement costs</strong> if the remaining staff follows the same pattern, with 6–12 months to complete capability collapse without immediate intervention.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>3. Analytical Methodology</h2>
+
+					<div class="steps-grid">
+						<div class="step-box">
+							<span class="step-number">01</span>
+							<h4>Database Structure Analysis</h4>
+							<p>Analyzed 5-table normalized database structure: employee (197 current staff), department (6 organizational units), performance (591 evaluation records), salary (197 compensation records), turnover (89 departure records). Mapped table relationships and business logic to design comprehensive query strategy.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">02</span>
+							<h4>Turnover & Performance Analysis</h4>
+							<p>Executed department-level turnover rate calculations using multi-table JOINs across employee and turnover tables. Analyzed performance distribution patterns to identify perfect and poor performers. Correlated performance scores with salary levels to expose compensation-performance misalignment driving attrition.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">03</span>
+							<h4>Compensation Equity Assessment</h4>
+							<p>Calculated average compensation by job title and department using aggregate functions (AVG, SUM, ROUND). Benchmarked internal salary levels against competitive market rates for equivalent roles. Identified systematic pay inequities creating flight risk among high performers.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">04</span>
+							<h4>Risk Stratification & Recommendations</h4>
+							<p>Developed risk scoring framework using CASE statements to categorize employees as High Risk, Medium Risk, or Low Risk based on performance thresholds. Identified 7 employees requiring immediate retention intervention. Built prioritized action plan with quantified ROI projections for each recommendation.</p>
+						</div>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>4. Key Insights</h2>
+
+					<div class="insight-card">
+						<h4>Insight 1 — Engineering Department Faces Existential Crisis (Urgent Intervention Required)</h4>
+						<p>SQL analysis revealed a catastrophic <strong>150% turnover rate in Engineering</strong> — meaning 9 engineers departed while only 6 currently remain after additional exits. This is not healthy rotation; it's a death spiral threatening core technical capability. Despite demonstrating high performance (4.10 average score), engineers are systematically underpaid at $80,000 versus competitive market rates of $95,000–$120,000 — a $15,000–$40,000 compensation gap. Every departing engineer costs $50,000–$75,000 to replace (recruitment, training, productivity loss), meaning the 9 departures already represent $450,000–$675,000 in sunk costs. Without immediate salary correction and retention efforts, <strong>complete Engineering capability collapse within 6–12 months is inevitable</strong>, costing an additional $300,000–$450,000 if the remaining 6 staff depart.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/nextgen-sql.jpg" alt="NextGen Corp Turnover Analysis SQL Query" />
+					</a>
+					<p class="image-caption">PostgreSQL Turnover Analysis — Query calculating department-level turnover rates revealing Engineering's 150% crisis, Marketing's 64% warning, and Sales' 13.79% success model</p>
+
+					<div class="insight-card">
+						<h4>Insight 2 — Zero Correlation Between Compensation and Performance Drives Systematic Talent Loss</h4>
+						<p>Compensation equity analysis using SQL aggregate functions exposed a shocking finding: <strong>there is zero correlation — in fact, an inverse relationship — between performance and pay</strong>. Marketing demonstrates the best performance scores (4.13 average) but receives the lowest compensation ($77,857). Engineering shows high performance (4.10) but is paid below market ($80,000). Meanwhile, Sales shows lower performance (4.00) but receives higher pay ($84,286). This inverted compensation-performance structure directly explains why Engineering and Marketing are hemorrhaging talent at 150% and 64% turnover rates respectively — top performers are systematically underpaid and leaving for market-rate opportunities. The business is retaining lower performers while losing stars, creating a negative selection spiral that degrades organizational capability over time.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/nextgen-compensation.jpg" alt="NextGen Corp Compensation Analysis" />
+					</a>
+					<p class="image-caption">Compensation Equity Analysis — SQL query revealing inverted pay-performance relationship: Marketing (4.13 performance, $77,857 salary) vs Sales (4.00 performance, $84,286 salary)</p>
+
+					<div class="insight-card">
+						<h4>Insight 3 — Seven High-Risk Employees Identified for Immediate Retention Intervention</h4>
+						<p>Using CASE statement logic to stratify employees by performance scores, the analysis identified <strong>7 employees categorized as "High Risk"</strong> with performance below 3.5 requiring immediate manager intervention and structured performance improvement plans. Proactive identification of flight-risk employees enables targeted retention efforts before they reach the decision to leave. Early intervention costs $5,000–$10,000 per employee (retention bonuses, career development investment, mentorship programs) versus $50,000–$100,000 replacement cost — delivering a 5–10x return on retention investment. The SQL-powered risk scoring framework transforms HR from reactive firefighting to proactive talent management, preventing turnover before it occurs rather than scrambling to backfill after departures.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/nextgen-risk.jpg" alt="NextGen Corp At-Risk Employee Analysis" />
+					</a>
+					<p class="image-caption">At-Risk Employee Identification — SQL query using CASE statements to categorize employees by performance thresholds, identifying 7 High Risk individuals requiring immediate retention focus</p>
+
+					<div class="insight-card">
+						<h4>Insight 4 — Sales Department Success Model Demonstrates What's Possible</h4>
+						<p>While Engineering and Marketing spiral into attrition crises, Sales demonstrates that sustainable retention is achievable within NextGen Corp's business model. Sales maintains a healthy <strong>13.79% turnover rate</strong> — well within industry benchmarks and far below the 64–150% catastrophic levels in other departments. This isn't luck; it's evidence of fair pay-performance balance through aligned incentives and reasonable compensation relative to contribution. The Sales model proves that retention is solvable, and provides a blueprint for replicating success across Engineering and Marketing through systematic compensation correction and performance-linked reward structures.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>5. Quantified Business Impact</h2>
+
+					<div class="impact-wrapper">
+						<ul class="impact-list">
+							<li>Analyzed <strong>197 employees across 5-table normalized database</strong> using 12 complex PostgreSQL queries demonstrating advanced SQL proficiency</li>
+							<li>Identified <strong>$800K–$1.2M annual cost savings opportunity</strong> through data-driven turnover prevention and compensation optimization</li>
+							<li>Exposed Engineering department's <strong>150% turnover rate creating existential capability risk</strong> — 9 departed, only 6 remain</li>
+							<li>Discovered <strong>systematic pay-performance inversion costing $600K–$900K annually</strong> in preventable turnover across Engineering and Marketing</li>
+							<li>Pinpointed <strong>7 high-risk employees requiring immediate retention intervention</strong> — proactive identification enables 5–10x ROI on retention investment</li>
+							<li>Revealed <strong>Marketing's 64% turnover driven by compensation failure</strong> — best performers (4.13 avg) receiving lowest pay ($77,857)</li>
+							<li>Documented Sales department's <strong>13.79% healthy turnover as replicable success model</strong> for organizational transformation</li>
+							<li>Delivered <strong>prioritized action plan with detailed ROI projections</strong> — emergency Engineering retention (1.2–5x ROI), high-risk intervention (5–10x ROI), compensation correction (3–4x ROI)</li>
+						</ul>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>6. Strategic Recommendations</h2>
+
+					<div class="insight-card">
+						<h4>Recommendation 1 — Emergency Engineering Retention (0–3 Months | Critical Priority)</h4>
+						<p><strong>Immediate Action:</strong> Adjust remaining 6 engineers' salaries to competitive market rate of $95,000–$120,000 immediately — before any additional departures occur. Current $80,000 compensation is $15,000–$40,000 below market, creating guaranteed flight risk. Investment: $90,000–$240,000 total salary adjustment across 6 employees. Savings: $300,000–$450,000 in replacement costs avoided if all 6 remain. <strong>ROI: 1.2–5x return within first 90 days.</strong> Without this action, Engineering capability collapse is inevitable within 6–12 months, threatening core product development and technical operations.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 2 — High-Risk Employee Intervention (0–3 Months)</h4>
+						<p><strong>Implementation:</strong> Conduct personalized retention conversations with the 7 employees identified as High Risk through SQL analysis. Develop tailored packages combining salary adjustments, career development pathways, mentorship programs, and skill-building investments. Investment: $5,000–$10,000 per employee = $35,000–$70,000 total. Savings: $50,000–$100,000 replacement cost per employee = $350,000–$700,000 total if retention succeeds. <strong>ROI: 5–10x return on proactive intervention.</strong> Data-driven early identification transforms HR from reactive crisis management to strategic talent retention.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 3 — Marketing Compensation Correction (3–6 Months)</h4>
+						<p><strong>Salary Adjustment:</strong> Increase Marketing average compensation from $77,857 (lowest across all departments despite highest performance) to $85,000 — an 8.4% correction aligning pay with contribution. This addresses the inverted compensation structure driving 64% turnover. Investment: $50,000–$75,000 annual increase across Marketing team. Expected outcome: 40% turnover reduction (64% → ~38%), preventing 3–4 additional departures annually worth $150,000–$400,000 in replacement costs. Creates positive performance-reward correlation encouraging retention and high achievement.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 4 — Salary Structure Overhaul (3–6 Months)</h4>
+						<p><strong>Structural Reform:</strong> Redesign compensation bands from current $60,000–$100,000 range to expanded $65,000–$130,000 structure accommodating market-competitive rates for technical roles. Correct inverted hierarchy where Sales Representatives earn more ($84,286) than Sales Managers ($80,000) — a fundamental organizational logic failure. Implement performance-based increase framework ensuring top performers (4.0+ scores) receive meaningful annual raises while poor performers (<3.5) face salary stagnation or reduction. Establishes clear pay-for-performance culture preventing future talent loss.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 5 — Performance System Redesign (6–12 Months)</h4>
+						<p><strong>Evaluation Recalibration:</strong> Current system shows 89% of employees rated as "poor performers" — indicating a fundamentally broken evaluation framework rather than actual widespread underperformance. Recalibrate performance standards to create meaningful differentiation between truly exceptional, solid, and underperforming employees. Link performance ratings directly to compensation decisions through transparent formulaic progression. Quarterly calibration sessions ensure consistent evaluation standards across departments. Goal: 20% exceptional, 60% solid, 20% development-needed distribution reflecting realistic talent curve.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 6 — Career Development Framework (6–12 Months)</h4>
+						<p><strong>Retention Infrastructure:</strong> Establish clear promotion pathways with defined skill requirements and timeline expectations for progression. Launch mentorship initiatives pairing high performers with senior leadership. Invest in quarterly training programs ($2,000–$5,000 per employee annually) building technical and leadership capabilities. Create visible advancement opportunities reducing departures driven by career stagnation. Combined with compensation correction, this addresses both financial and professional development motivations for retention.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>7. Projected 12-Month Outcomes</h2>
+
+					<div class="highlight-box">
+						<p><strong>Quantified Impact Projections:</strong></p>
+						<p>Engineering turnover: <strong>150% → 25%</strong> (achieving sustainable industry standard through market-rate compensation)</p>
+						<p>Marketing turnover: <strong>64% → 30%</strong> (healthy benchmark achieved via pay-performance alignment)</p>
+						<p>Total cost savings: <strong>$800K–$1.2M</strong> in prevented turnover costs across recruitment, training, and lost productivity</p>
+						<p>Positive performance-compensation correlation: <strong>Established across all departments</strong> ending inverted structure driving talent loss</p>
+						<p>Net financial impact: <strong>$200K–$600K annual savings</strong> after all salary adjustments and retention investments</p>
+						<p>Strategic positioning: <strong>Market leadership in talent retention</strong> creating competitive advantage through superior workforce stability</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<ul class="actions special" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+						<li><a href="sql-projects.html" class="button">← Back to SQL Projects</a></li>
+						<li><a href="projects-tools.html" class="button">All Tools</a></li>
+					</ul>
+
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section>
+					<h3>Interested in Working Together?</h3>
+					<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes.</p>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>London, United Kingdom</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:07719396377">07719 396 377</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:lorettaadjerhore@gmail.com">lorettaadjerhore@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/loretta-adjerhore" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Loretta Adjerhore 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

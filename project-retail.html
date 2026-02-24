@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Choco de Luxe: European Sales Analytics - Loretta Adjerhore</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background-color: #0A192F !important;
+			}
+
+			.tool-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 15px 0 25px 0;
+			}
+			.tool-tag {
+				background-color: #64FFDA;
+				color: #0A192F;
+				padding: 6px 16px;
+				border-radius: 20px;
+				font-weight: 700;
+				font-size: 0.85em;
+				letter-spacing: 0.5px;
+			}
+
+			.section-divider {
+				border: none;
+				border-top: 1px solid rgba(100, 255, 218, 0.2);
+				margin: 40px 0;
+			}
+
+			.image-caption {
+				text-align: center;
+				font-style: italic;
+				color: #8892B0;
+				font-size: 0.9em;
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+
+			.metrics-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+				margin: 30px 0;
+			}
+			.metric-card {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.3);
+				border-radius: 8px;
+				padding: 25px 20px;
+				text-align: center;
+			}
+			.metric-number {
+				font-size: 2em;
+				font-weight: 900;
+				color: #64FFDA;
+				display: block;
+				margin-bottom: 8px;
+			}
+			.metric-label {
+				font-size: 0.85em;
+				color: #8892B0;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.highlight-box {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				border-radius: 0 8px 8px 0;
+				padding: 20px 25px;
+				margin: 25px 0;
+			}
+			.highlight-box p {
+				margin: 0;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.highlight-box strong {
+				color: #64FFDA;
+			}
+
+			.steps-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 20px;
+				margin: 25px 0;
+			}
+			.step-box {
+				background: #0A192F;
+				border: 1px solid rgba(100, 255, 218, 0.2);
+				border-top: 4px solid #64FFDA;
+				border-radius: 8px;
+				padding: 25px;
+			}
+			.step-number {
+				color: #64FFDA;
+				font-size: 1.5em;
+				font-weight: 900;
+				display: block;
+				margin-bottom: 10px;
+			}
+			.step-box h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.step-box p {
+				color: #CCD6F6;
+				font-size: 0.95em;
+				line-height: 1.8;
+				margin: 0;
+			}
+
+			.insight-card {
+				background: #0A192F;
+				border-left: 5px solid #64FFDA;
+				padding: 25px;
+				margin: 20px 0;
+				border-radius: 0 8px 8px 0;
+			}
+			.insight-card h4 {
+				color: #64FFDA;
+				margin-bottom: 12px;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.insight-card p {
+				color: #CCD6F6;
+				line-height: 1.8;
+				margin: 0;
+			}
+			.insight-card strong {
+				color: #64FFDA;
+			}
+			.insight-card ul {
+				color: #CCD6F6;
+				margin: 10px 0 0 20px;
+				padding: 0;
+			}
+			.insight-card ul li {
+				margin-bottom: 8px;
+				line-height: 1.8;
+			}
+
+			.impact-wrapper {
+				background: #0A192F;
+				border-radius: 8px;
+				padding: 10px 25px;
+				margin: 20px 0;
+			}
+			.impact-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.impact-list li {
+				padding: 14px 0 14px 35px;
+				border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+				position: relative;
+				color: #CCD6F6;
+				line-height: 1.8;
+			}
+			.impact-list li:last-child {
+				border-bottom: none;
+			}
+			.impact-list li:before {
+				content: "✓";
+				color: #64FFDA;
+				position: absolute;
+				left: 0;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+			.impact-list strong {
+				color: #64FFDA;
+			}
+
+			@media (max-width: 768px) {
+				.metrics-grid { grid-template-columns: repeat(2, 1fr); }
+				.steps-grid { grid-template-columns: 1fr; }
+			}
+			@media (max-width: 480px) {
+				.metrics-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Loretta Adjerhore</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects-tools.html">Projects by Tools</a></li>
+					<li><a href="about.html">About Me</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/loretta-adjerhore" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:lorettaadjerhore@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+
+					<header class="major">
+						<span class="date">Retail Analytics</span>
+						<h1>Choco de Luxe | European Sales Performance Analytics</h1>
+						<p>Multi-market analysis of €5.32M in luxury chocolate sales across 7 European cities, uncovering a €672K revenue recovery opportunity, channel profitability gaps, and a sales force optimisation framework worth €500K+ annually.</p>
+					</header>
+
+					<a class="image main">
+						<img src="images/choco-location.jpg" alt="Choco de Luxe Location Performance Dashboard" />
+					</a>
+					<p class="image-caption">Choco de Luxe Location Performance Dashboard — Geographic revenue distribution, delivery success metrics, and city-level strategic insights across 7 European markets</p>
+
+					<div class="tool-tags">
+						<span class="tool-tag">Tableau</span>
+						<span class="tool-tag">SQL</span>
+						<span class="tool-tag">Excel</span>
+						<span class="tool-tag">E-commerce Analytics</span>
+						<span class="tool-tag">Multi-Market Analysis</span>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>1. The Business Problem</h2>
+
+					<p>Choco de Luxe is a premium artisanal chocolate brand headquartered in Brussels, Belgium, operating across 7 European cities with multi-channel distribution spanning website, warehouse, and social media. Despite a strong brand presence and €5.32M in annual revenue, leadership was making expansion and investment decisions without any data-driven foundation.</p>
+
+					<p>The business had no unified visibility into which cities, channels, or products were truly driving profitability. Some locations were consistently underperforming with unclear root causes, and the sales team of 25 representatives showed wide performance variance with no framework to understand why top performers succeeded or how to replicate their results.</p>
+
+					<div class="highlight-box">
+						<p><strong>The core challenges:</strong> Leadership could not identify which of their 7 cities, 3 sales channels, or 21 product SKUs were genuinely profitable versus consuming resources without return. Delivery performance was inconsistent across locations with no visibility into root causes. And with 56% of the sales team missing their €100K profit target, there was no data foundation for territory optimisation, coaching, or performance management — leaving significant revenue on the table every quarter.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>2. Key Performance Metrics</h2>
+
+					<div class="metrics-grid">
+						<div class="metric-card">
+							<span class="metric-number">€5.32M</span>
+							<span class="metric-label">Total Revenue</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">€2.45M</span>
+							<span class="metric-label">Total Profit</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">46%</span>
+							<span class="metric-label">Profit Margin</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">177,007</span>
+							<span class="metric-label">Boxes Shipped</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">95.61%</span>
+							<span class="metric-label">Delivery Success Rate</span>
+						</div>
+						<div class="metric-card">
+							<span class="metric-number">1,094</span>
+							<span class="metric-label">Total Orders Across 7 Cities</span>
+						</div>
+					</div>
+
+					<div class="highlight-box">
+						<p>The 46% profit margin demonstrates strong premium positioning in the luxury chocolate segment. However, with <strong>only 11 of 25 sales representatives meeting their €100K profit target</strong> and a €672K revenue gap between the top and bottom performing cities, significant optimisation opportunity exists — without requiring any new market entry or product development.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>3. Analytical Methodology</h2>
+
+					<div class="steps-grid">
+						<div class="step-box">
+							<span class="step-number">01</span>
+							<h4>Multi-Market Geographic Analysis</h4>
+							<p>Compared performance across all 7 European cities — Turin, Barcelona, Amsterdam, Zurich, Brussels, Hamburg, and Lyon — across revenue, profit, delivery success rate, and total order volume. Identified top and bottom performers and investigated the root causes behind performance gaps to distinguish operational issues from market penetration issues.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">02</span>
+							<h4>Channel Profitability Study</h4>
+							<p>Conducted a detailed profitability analysis across the three distribution channels — Website, Warehouse, and Social Media — comparing revenue contribution, profit margins, and customer acquisition dynamics. Assessed product-channel alignment to identify where strategic investment would generate the highest ROI.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">03</span>
+							<h4>Tableau Dashboard Development</h4>
+							<p>Built a 3-page interactive Tableau dashboard suite: Page 1 covering location and sales performance with city comparison and delivery metrics; Page 2 covering product and channel profitability; Page 3 covering individual sales team performance against the €100K profit target. All pages include interactive filtering and drill-down capabilities across multiple dimensions.</p>
+						</div>
+						<div class="step-box">
+							<span class="step-number">04</span>
+							<h4>Sales Force Evaluation & Recommendations</h4>
+							<p>Tracked individual performance for all 25 sales representatives against the €100K profit target. Identified top and bottom performers, analysed the 2.2x performance spread between best and worst, and developed a data-driven framework for territory optimisation, mentorship, and incentive alignment to close the performance gap across the team.</p>
+						</div>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>4. Key Insights</h2>
+
+					<div class="insight-card">
+						<h4>Insight 1 — €672K Revenue Gap Between Cities Reveals Untapped Potential</h4>
+						<p>The top 3 cities generate 61% of total revenue: Turin, Italy (€1,026,368 | 97.07% delivery success), Barcelona, Spain (€1,004,109 | 95.63%), and Amsterdam, Netherlands (€980,001 | 94.61%). Meanwhile Lyon, France — the bottom performer — generates only €358,260 despite achieving a <strong>perfect 100% delivery success rate</strong>. This is the critical finding: Lyon's operational execution is flawless, but revenue is 65% below Turin. This means the problem is market penetration, pricing, or product mix — not operations. <strong>If Lyon reaches just 75% of Turin's performance, that represents €300K+ in annual revenue recovery.</strong></p>
+					</div>
+
+					<a class="image main">
+						<img src="images/choco-location.jpg" alt="Choco de Luxe Location Performance Dashboard" />
+					</a>
+					<p class="image-caption">Location Performance Dashboard — Revenue by city showing Turin (€1.03M) as top performer and Lyon (€358K) as the highest-opportunity underperformer despite perfect delivery</p>
+
+					<div class="insight-card">
+						<h4>Insight 2 — Website Channel Delivers 62% Higher Margins Than Social Media</h4>
+						<p>Channel profitability analysis revealed a dramatic margin gap across the three distribution channels. The Website channel generates <strong>€2.43M revenue at a 45.8% profit margin</strong> — the highest of all three channels. Warehouse contributes €1.51M at 28.3% margin, while Social Media generates €1.38M at only 25.9% margin. The website's direct-to-consumer model supports premium pricing, with organic products representing 45% of website sales. The strategic implication is clear: the website delivers 62% higher margins than social media despite lower absolute volume. <strong>Reallocating 15% of the marketing budget from lower-margin channels to website optimisation is projected to deliver €250K+ annual profit improvement.</strong></p>
+					</div>
+
+					<a class="image main">
+						<img src="images/choco-channel.jpg" alt="Choco de Luxe Channel Profitability Analysis" />
+					</a>
+					<p class="image-caption">Channel Profitability Analysis — Website (45.8% margin) vs Warehouse (28.3%) vs Social Media (25.9%) demonstrating the strategic case for channel investment rebalancing</p>
+
+					<div class="insight-card">
+						<h4>Insight 3 — 56% of Sales Team Missing Target With Replicable Success Patterns</h4>
+						<p>Performance tracking against the €100K profit target revealed a significant team-wide gap: <strong>only 11 of 25 representatives are meeting target (44% success rate)</strong>, while 14 are underperforming. The performance spread is 2.2x between the top performer Karlen McCaffrey (€131,994 — 32% above target) and the bottom performer Wilone O'Kielt (€54,503 — 45% below target). Critically, this wide variance suggests territory assignment, product knowledge, and training gaps — not fundamental market limitations. The success patterns of top performers are identifiable and replicable through data-driven coaching and territory optimisation.</p>
+					</div>
+
+					<a class="image main">
+						<img src="images/choco-salesteam.jpg" alt="Choco de Luxe Sales Team Performance Dashboard" />
+					</a>
+					<p class="image-caption">Sales Team Performance Dashboard — Individual tracking against €100K profit target showing 11 of 25 representatives meeting target with a 2.2x performance spread</p>
+
+					<hr class="section-divider" />
+
+					<h2>5. Quantified Business Impact</h2>
+
+					<div class="impact-wrapper">
+						<ul class="impact-list">
+							<li>Delivered comprehensive <strong>7-city European performance analysis across €5.32M revenue</strong> — providing the first unified view enabling data-driven leadership decisions</li>
+							<li>Identified <strong>€672K revenue gap between top and bottom performing cities</strong> and built a Lyon turnaround initiative projecting €300K+ annual recovery</li>
+							<li>Uncovered <strong>62% margin advantage of website channel over social media</strong> — providing clear evidence for channel investment rebalancing worth €250K+ annually</li>
+							<li>Mapped <strong>sales team performance gap</strong>: 56% of representatives below target with a 2.2x spread between top and bottom performers</li>
+							<li>Identified <strong>Hamburg and Brussels delivery bottlenecks</strong> at 92.70% success rate — below the 97%+ benchmark, representing €90K in value protection opportunity</li>
+							<li>Built a <strong>sales force development framework</strong> targeting all 25 representatives achieving the €100K profit threshold — projected €150K+ profit improvement</li>
+							<li>Projected <strong>€500K+ combined annual impact</strong> through Lyon recovery and sales force optimisation initiatives</li>
+							<li>Delivered a <strong>3-page interactive Tableau dashboard suite</strong> enabling executive decision-making across location, product, channel, and sales team dimensions</li>
+						</ul>
+					</div>
+
+					<hr class="section-divider" />
+
+					<h2>6. Strategic Recommendations</h2>
+
+					<div class="insight-card">
+						<h4>Recommendation 1 — Lyon Turnaround Initiative (Urgent — €300K+ Opportunity)</h4>
+						<p>Conduct an immediate root cause analysis in Lyon focused on market penetration, product-market fit, and pricing strategy. Deploy a top-performing sales representative from the Turin market to share best practices and drive account development. Reassess the product mix offered in Lyon against local customer preferences. Target: bring Lyon to 75% of Turin's performance level within 6–12 months, representing <strong>€300K+ in annual revenue recovery</strong> from a market that already has perfect operational delivery.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 2 — Channel Investment Rebalancing (€250K+ Margin Improvement)</h4>
+						<p>Reallocate 15% of warehouse and social media marketing budgets to website channel optimisation. Enhance website functionality, user experience, and conversion optimisation — particularly for the organic product range which represents 45% of website sales. The website's 45.8% margin versus social media's 25.9% makes this the <strong>highest-ROI reallocation available without any new product or market investment</strong>. Projected 10–12% overall margin improvement representing €250K+ annual profit increase.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 3 — Delivery Performance Optimisation (€90K Value Protection)</h4>
+						<p>Hamburg and Brussels are both underperforming at 92.70% delivery success — significantly below the 97%+ benchmark achieved by Turin and Zurich. Investigate logistics bottlenecks in these two markets, implement real-time delivery tracking, and review last-mile delivery partner performance. Target: achieve 97%+ delivery success across all 7 markets, protecting customer satisfaction and repeat purchase rates in these key revenue markets.</p>
+					</div>
+
+					<div class="insight-card">
+						<h4>Recommendation 4 — Sales Force Development (€150K+ Profit Improvement)</h4>
+						<p>Implement a structured mentorship programme pairing top performers (Karlen McCaffrey, Beverie Moffet, Kelci Walkden) with underperforming representatives. Conduct territory optimisation analysis to ensure fair market coverage. Introduce performance-based incentive structures and quarterly product knowledge training. The goal: move all 25 representatives above the <strong>€100K profit threshold</strong>, closing the current 2.2x performance gap through replicable, data-backed coaching frameworks.</p>
+					</div>
+
+					<hr class="section-divider" />
+
+					<ul class="actions special" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+						<li><a href="project-pharma.html" class="button">← Previous: NovaMed</a></li>
+						<li><a href="project-hr.html" class="button primary">Next: NextGen Corp →</a></li>
+					</ul>
+
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section>
+					<h3>Interested in Working Together?</h3>
+					<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes across healthcare, pharmaceutical, retail, and logistics sectors.</p>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>London, United Kingdom</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:07719396377">07719 396 377</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:lorettaadjerhore@gmail.com">lorettaadjerhore@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/loretta-adjerhore" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Loretta Adjerhore 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
