@@ -6,21 +6,139 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Hero Section Styling */
+			.hero-section {
+				background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+				padding: 80px 20px;
+				text-align: center;
+				border-bottom: 3px solid #64FFDA;
+			}
+			.hero-section h1 {
+				font-size: 3em;
+				color: #64FFDA;
+				margin-bottom: 15px;
+			}
+			.hero-section .tagline {
+				font-size: 1.3em;
+				color: #CCD6F6;
+				margin-bottom: 10px;
+			}
+			.hero-section .subtitle {
+				font-size: 1em;
+				color: #8892B0;
+				margin-bottom: 30px;
+			}
+
+			/* About Section Styling */
+			.about-intro {
+				background: #112240;
+				padding: 60px 20px;
+				border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+			}
+			.about-intro h2 {
+				color: #64FFDA;
+				text-align: center;
+				margin-bottom: 30px;
+				font-size: 2em;
+			}
+			.about-intro p {
+				color: #CCD6F6;
+				line-height: 1.8;
+				max-width: 900px;
+				margin: 0 auto 20px auto;
+				font-size: 1.1em;
+			}
+			.about-intro strong {
+				color: #64FFDA;
+			}
+
+			/* Strengths Grid */
+			.strengths-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 25px;
+				max-width: 1000px;
+				margin: 40px auto 0 auto;
+			}
+			.strength-card {
+				background: #0A192F;
+				border-left: 4px solid #64FFDA;
+				padding: 20px;
+				border-radius: 0 8px 8px 0;
+			}
+			.strength-card h3 {
+				color: #64FFDA;
+				font-size: 1em;
+				margin-bottom: 10px;
+			}
+			.strength-card p {
+				color: #CCD6F6;
+				margin: 0;
+				font-size: 0.95em;
+				line-height: 1.7;
+			}
+
+			/* Disclaimer Section */
+			.disclaimer-section {
+				background: rgba(100, 255, 218, 0.05);
+				border: 1px solid rgba(100, 255, 218, 0.3);
+				border-radius: 8px;
+				padding: 25px;
+				margin: 40px auto;
+				max-width: 900px;
+			}
+			.disclaimer-section h3 {
+				color: #64FFDA;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 12px;
+			}
+			.disclaimer-section p {
+				color: #8892B0;
+				margin: 0;
+				font-size: 0.9em;
+				line-height: 1.7;
+			}
+
+			/* Projects Section */
+			.projects-intro {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.projects-intro h2 {
+				color: #64FFDA;
+				font-size: 2em;
+				margin-bottom: 15px;
+			}
+			.projects-intro p {
+				color: #8892B0;
+				font-size: 1.1em;
+			}
+
+			@media (max-width: 768px) {
+				.hero-section h1 { font-size: 2em; }
+				.strengths-grid { grid-template-columns: 1fr; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Loretta Adjerhore</h1>
-						<p>Data Analyst | SQL · Power BI · Python · Tableau</p>
-						<p>Healthcare & Pharmaceutical Analytics Specialist</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+				<!-- Hero Section -->
+				<div class="hero-section">
+					<h1>Loretta Adjerhore</h1>
+					<p class="tagline">Data Analyst | SQL · Power BI · Python · Tableau</p>
+					<p class="subtitle">Healthcare & Pharmaceutical Analytics Specialist</p>
+					<ul class="icons" style="justify-content: center; margin-top: 20px;">
+						<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/loretta-adjerhore" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:lorettaadjerhore@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
 
 				<!-- Header -->
 					<header id="header">
@@ -32,7 +150,7 @@
 						<ul class="links">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="projects-tools.html">Projects by Tools</a></li>
-							<li><a href="about.html">About Me</a></li>
+							<li><a href="about.html">Full About</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
@@ -44,13 +162,50 @@
 				<!-- Main -->
 					<div id="main">
 
-						<article class="post featured">
-								<header class="major">
-									<p>This portfolio demonstrates practical data analytics experience across diverse sectors, showcasing the ability to extract meaningful insights from complex datasets and deliver solutions that address real business challenges through systematic analysis and technical expertise.</p>
-								</header>
-							</article>
+						<!-- About Me Section (FIRST!) -->
+						<section class="about-intro">
+							<h2>About Me</h2>
+							<p>I'm a certified Master Data Analyst specializing in transforming complex datasets into strategic insights that drive business decisions. With expertise spanning healthcare analytics, pharmaceutical distribution, and multi-market operations, I deliver measurable impact through rigorous analysis and clear stakeholder communication.</p>
 
-						<!-- Posts -->
+							<p>I believe great analytics isn't just about technical proficiency—it's about understanding the business context, asking the right questions, and delivering insights that stakeholders can actually use. My diverse background allows me to translate complex analytical findings into clear, actionable recommendations that resonate with both technical and non-technical audiences.</p>
+
+							<div class="strengths-grid">
+								<div class="strength-card">
+									<h3>Problem-Solving & Critical Thinking</h3>
+									<p>I break down complex business challenges systematically—identifying root causes rather than symptoms. This led me to diagnose a 78.7% city mismatch rate as the root cause of system-wide logistics failures, and to identify three patient cohorts driving 50%+ of medication-related adverse events.</p>
+								</div>
+								<div class="strength-card">
+									<h3>Business Impact Focus</h3>
+									<p>I prioritize actionable insights over technical complexity. My work consistently delivers quantified opportunities—<strong>$20–100M in healthcare cost savings</strong>, <strong>£3–4M in expansion opportunities</strong>, and operational improvements with clear ROI projections.</p>
+								</div>
+								<div class="strength-card">
+									<h3>Clear Communication</h3>
+									<p>I translate complex findings into narratives that drive action, adjusting my communication style for different audiences—from C-suite executives to technical teams to clinical professionals.</p>
+								</div>
+								<div class="strength-card">
+									<h3>Adaptability & Resilience</h3>
+									<p>Real-world data is messy. I thrive under these conditions—extracting maximum insight from imperfect data while maintaining analytical rigor and documenting limitations honestly.</p>
+								</div>
+							</div>
+
+							<div style="text-align: center; margin-top: 40px;">
+								<a href="about.html" class="button large">Read Full About Me</a>
+							</div>
+						</section>
+
+						<!-- Disclaimer Section -->
+						<div class="disclaimer-section">
+							<h3><i class="fas fa-info-circle" style="margin-right: 8px;"></i> Portfolio Disclaimer</h3>
+							<p><strong>Professional Integrity Notice:</strong> Projects featured in this portfolio demonstrate analytical capabilities using simulated business scenarios and educational datasets developed during professional training and internships. All company names, data, and business contexts are either fictional, anonymized, or used with permission. No confidential or proprietary information is disclosed. Work completed at Amdari Inc represents real commercial analysis conducted during my role as Data Analyst.</p>
+						</div>
+
+						<!-- Featured Projects Section -->
+						<section style="padding: 60px 20px;">
+							<div class="projects-intro">
+								<h2>Featured Analytics Projects</h2>
+								<p>Demonstrating expertise across healthcare, pharmaceutical, retail, and logistics analytics</p>
+							</div>
+
 							<section class="posts">
 								<article>
 									<header>
@@ -101,12 +256,15 @@
 									</ul>
 								</article>
 							</section>
+						</section>
 
 						<!-- Let's Connect -->
-							<section>
-								<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes across healthcare, pharmaceutical, retail, and logistics sectors.</p>
+							<section style="text-align: center; padding: 40px 20px;">
+								<h2>Let's Connect</h2>
+								<p>I'm seeking Data Analyst opportunities in London where I can apply analytical expertise to drive measurable business outcomes. If you're looking for someone who combines technical proficiency with strategic thinking and clear communication, let's talk.</p>
 								<ul class="actions special">
-									<li><a href="about.html" class="button large">Learn More About Me</a></li>
+									<li><a href="mailto:lorettaadjerhore@gmail.com" class="button large primary">Get In Touch</a></li>
+									<li><a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" class="button large" target="_blank">Connect on LinkedIn</a></li>
 								</ul>
 							</section>
 
@@ -116,7 +274,7 @@
 					<footer id="footer">
 						<section>
 							<h3>Interested in Working Together?</h3>
-							<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes.</p>
+							<p>Available for Data Analyst opportunities in London where analytical skills can drive measurable business outcomes across healthcare, pharmaceutical, retail, and logistics sectors.</p>
 						</section>
 						<section class="split contact">
 							<section class="alt">
