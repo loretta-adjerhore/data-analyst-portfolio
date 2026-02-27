@@ -198,7 +198,7 @@
     </div>
 
     <div class="section-block">
-      <h2>Project Screenshots</h2>
+      <h2 id="dashboards">Project Screenshots</h2>
       <span class="rule"></span>
       <div class="dashboard-section">
         <div class="dashboard-header">
@@ -231,19 +231,11 @@
 
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
+    <p>Data Analyst &middot; London, UK &middot; <a href="/cdn-cgi/l/email-protection#016d6e736475756060656b6473696e736441666c60686d2f626e6c" style="color:#C19A5B;"><span class="__cf_email__" data-cfemail="325e5d405746465353565857405a5d405772555f535b5e1c515d5f">[email&#160;protected]</span></a></p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.querySelectorAll(".tab-btn").forEach(function(btn) {
       btn.addEventListener("click", function() {
         var section = btn.closest(".dashboard-section");
         section.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
-        section.querySelectorAll(".tab-pane").forEach(function(p) { p.classList.remove("active"); });
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-      });
-    });
-  </script>
-</body>
-</html>
