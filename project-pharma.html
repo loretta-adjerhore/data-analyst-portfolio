@@ -126,12 +126,10 @@
           <button class="tab-btn" data-tab="tab-nm-2">Customer Analysis</button>
         </div>
         <div id="tab-nm-1" class="tab-pane active">
-          <!-- REPLACE with: <img src="images/novamed-dashboard1.jpg" alt="NovaMed Sales Performance" style="width:100%;display:block;"> -->
-          <div class="dashboard-placeholder"><i class="fas fa-chart-line"></i><span>Sales Performance Dashboard</span><span style="font-size:0.78rem;opacity:0.6;">Revenue trends &middot; Top/Bottom drugs &middot; Customer revenue</span></div>
+          <img src="images/novamed-dashboard1.jpg" alt="NovaMed Sales Performance" style="width:100%;display:block;">
         </div>
         <div id="tab-nm-2" class="tab-pane">
-          <!-- REPLACE with: <img src="images/novamed-dashboard2.JPG" alt="NovaMed Customer Analysis" style="width:100%;display:block;"> -->
-          <div class="dashboard-placeholder"><i class="fas fa-users"></i><span>Customer Analysis Dashboard</span><span style="font-size:0.78rem;opacity:0.6;">Demographics &middot; Geography &middot; Buyer behaviour</span></div>
+          <img src="images/novamed-dashboard2.JPG" alt="NovaMed Customer Analysis" style="width:100%;display:block;">
         </div>
         <div class="dashboard-footer">
           <a href="https://github.com/loretta-adjerhore" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View on GitHub</a>
@@ -145,19 +143,11 @@
 
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
+    <p>Data Analyst &middot; London, UK &middot; <a href="/cdn-cgi/l/email-protection#610d0e130415150000050b0413090e130421060c00080d4f020e0c" style="color:#C19A5B;"><span class="__cf_email__" data-cfemail="90fcffe2f5e4e4f1f1f4faf5e2f8ffe2f5d0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a></p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.querySelectorAll(".tab-btn").forEach(function(btn) {
       btn.addEventListener("click", function() {
         var section = btn.closest(".dashboard-section");
         section.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
-        section.querySelectorAll(".tab-pane").forEach(function(p) { p.classList.remove("active"); });
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-      });
-    });
-  </script>
-</body>
-</html>
