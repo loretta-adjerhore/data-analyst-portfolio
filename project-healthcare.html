@@ -128,4 +128,18 @@
 
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="/cdn-cgi/l/email-protection#ea8685988f9e9e8b8b8e808f988285988faa8d878b8386c4898587" style="color:#C19A5B;"><span class="
+    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
+  </footer>
+  <script>
+    document.querySelectorAll(".tab-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var section = btn.closest(".dashboard-section");
+        section.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
+        section.querySelectorAll(".tab-pane").forEach(function(p) { p.classList.remove("active"); });
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
