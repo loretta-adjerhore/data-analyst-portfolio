@@ -24,7 +24,7 @@
     .dots { display: flex; gap: 6px; align-items: center; }
     .dot { width: 7px; height: 7px; border-radius: 50%; background: #444; transition: background 0.2s; }
     .dot.active { background: var(--gold); }
-    .image-wrap { flex: 1; display: flex; align-items: center; justify-content: center; padding: 0; overflow: auto; }
+    .image-wrap { flex: 1; display: flex; align-items: center; justify-content: center; overflow: auto; }
     .image-wrap img { max-width: 100%; max-height: calc(100vh - 200px); object-fit: contain; display: block; }
     .bottom-nav { background: #111; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #333; flex-shrink: 0; }
     .nav-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 3px; text-decoration: none; border: 2px solid #444; color: #ccc; transition: all 0.2s; }
@@ -41,24 +41,19 @@
     <a href="index.html" class="brand">Loretta Adjerhore</a>
     <a href="project-hr.html#dashboards" class="back"><i class="fas fa-arrow-left"></i> Back to NextGen Corp</a>
   </div>
-
   <div class="dash-header">
-    <div>
-      <div class="dash-title">NextGen Corp &mdash; At-Risk Employees</div>
-    </div>
+    <div class="dash-title">NextGen Corp &mdash; At-Risk Employees</div>
     <div class="dash-meta">
       <span class="dash-tag">PostgreSQL</span>
       <span class="dash-counter">3 of 3</span>
       <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot active"></span></div>
     </div>
   </div>
-
   <div class="image-wrap">
     <img src="images/nextgen-risk.jpg" alt="At-Risk Employees" />
   </div>
-
   <div class="bottom-nav">
-    <a href="dashboard-nextgen-2.html" class="nav-btn"><i class="fas fa-arrow-left"></i> Compensation Insight</a>
+    <a href="Dashboard nextgen 2.html" class="nav-btn"><i class="fas fa-arrow-left"></i> Compensation Insight</a>
     <a href="project-hr.html" class="view-case"><i class="fas fa-file-alt"></i> View Case Study</a>
     <span class="nav-btn next disabled">Last Dashboard <i class="fas fa-arrow-right"></i></span>
   </div>
