@@ -613,7 +613,7 @@
       <div class="about-grid">
         <div class="about-photo">
           <!-- Replace src with your actual photo: images/profile.jpg -->
-          <img src="images/Loretta's photo.jpeg"
+          <img src="images/profile.jpg"
                alt="Loretta Adjerhore"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="photo-placeholder" style="display:none;">
@@ -835,7 +835,7 @@
       <span class="section-rule"></span>
       <p class="contact-intro">Interested in collaborating or have questions about my work? I'd love to hear from you.</p>
 
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
@@ -858,6 +858,18 @@
           <button type="submit" class="btn-submit">Send Message</button>
         </div>
       </form>
+
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name    = document.getElementById('name').value.trim();
+          const email   = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value.trim() || 'Portfolio Enquiry';
+          const message = document.getElementById('message').value.trim();
+          const body    = `Hi Loretta,%0A%0AMy name is ${encodeURIComponent(name)} (${encodeURIComponent(email)}).%0A%0A${encodeURIComponent(message)}`;
+          window.location.href = `mailto:lorettaadjerhore@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+        });
+      </script>
     </div>
   </section>
 
