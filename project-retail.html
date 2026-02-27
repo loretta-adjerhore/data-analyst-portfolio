@@ -127,16 +127,13 @@
           <button class="tab-btn" data-tab="tab-choco-3">Sales Team</button>
         </div>
         <div id="tab-choco-1" class="tab-pane active">
-          <!-- REPLACE with: <img src="images/choco-dashboard-1.jpg" alt="Location Performance" style="width:100%;display:block;"> -->
-          <div class="dashboard-placeholder"><i class="fas fa-map-marker-alt"></i><span>Location Performance Dashboard</span><span style="font-size:0.78rem;opacity:0.6;">City revenue &middot; Delivery success &middot; Geographic map</span></div>
+          <img src="images/choco-location.JPG" alt="Location Performance" style="width:100%;display:block;">
         </div>
         <div id="tab-choco-2" class="tab-pane">
-          <!-- REPLACE with: <img src="images/choco-dashboard-2.jpg" alt="Product and Channel" style="width:100%;display:block;"> -->
-          <div class="dashboard-placeholder"><i class="fas fa-chart-pie"></i><span>Product &amp; Channel Dashboard</span><span style="font-size:0.78rem;opacity:0.6;">Channel margins &middot; Product mix &middot; Profitability</span></div>
+          <img src="images/choco-salesteam.JPG" alt="Product and Channel" style="width:100%;display:block;">
         </div>
         <div id="tab-choco-3" class="tab-pane">
-          <!-- REPLACE with: <img src="images/choco-dashboard-3.jpg" alt="Sales Team Performance" style="width:100%;display:block;"> -->
-          <div class="dashboard-placeholder"><i class="fas fa-user-tie"></i><span>Sales Team Performance Dashboard</span><span style="font-size:0.78rem;opacity:0.6;">Individual targets &middot; Top &amp; bottom performers &middot; Rankings</span></div>
+          <img src="images/choco-6.png.JPG" alt="Sales Team Performance" style="width:100%;display:block;">
         </div>
         <div class="dashboard-footer">
           <a href="https://github.com/loretta-adjerhore" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View on GitHub</a>
@@ -150,19 +147,11 @@
 
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
+    <p>Data Analyst &middot; London, UK &middot; <a href="/cdn-cgi/l/email-protection#5a3635283f2e2e3b3b3e303f283235283f1a3d373b333674393537" style="color:#C19A5B;"><span class="__cf_email__" data-cfemail="b4d8dbc6d1c0c0d5d5d0ded1c6dcdbc6d1f4d3d9d5ddd89ad7dbd9">[email&#160;protected]</span></a></p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.querySelectorAll(".tab-btn").forEach(function(btn) {
       btn.addEventListener("click", function() {
         var section = btn.closest(".dashboard-section");
         section.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
-        section.querySelectorAll(".tab-pane").forEach(function(p) { p.classList.remove("active"); });
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-      });
-    });
-  </script>
-</body>
-</html>
