@@ -572,12 +572,11 @@
     .social-icons { animation: fadeUp 0.7s 0.35s ease both; }
     #header nav   { animation: fadeUp 0.7s 0.45s ease both; }
 
-    .about-strengths { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 20px 0 24px; }
-    .strength-item { display: flex; gap: 14px; align-items: flex-start; }
-    .strength-icon { color: var(--gold); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0; width: 20px; text-align: center; }
     .strength-item strong { display: block; font-size: 0.92rem; color: var(--dark); margin-bottom: 4px; }
     .strength-item p { font-size: 0.85rem; color: var(--soft); margin: 0; line-height: 1.6; }
-    @media (max-width: 600px) { .about-strengths { grid-template-columns: 1fr; } }
+
+    .projects-note { font-size: 0.82rem; color: var(--soft); margin-bottom: 28px; display: flex; align-items: center; gap: 8px; }
+    .projects-note i { color: var(--gold); }
   </style>
 </head>
 
@@ -596,7 +595,7 @@
       <a href="https://github.com/loretta-adjerhore" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="mailto:lorettaadjerhore@gmail.com" title="Email">
+      <a href="/cdn-cgi/l/email-protection#fa9695889f8e8e9b9b9e909f889295889fba9d979b9396d4999597" title="Email">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
@@ -630,14 +629,9 @@
 
         <div class="about-text">
           <h3>Hello, I'm Loretta</h3>
-          <p>I specialise in transforming complex datasets into strategic insights that drive confident business decisions. My work spans healthcare analytics, pharmaceutical distribution, retail performance, and logistics operations &mdash; always with a focus on delivering measurable, clearly communicated impact.</p>
-          <p>I believe great analytics is about more than technical proficiency. It&rsquo;s about understanding the business context, asking the right questions, and delivering findings that stakeholders can actually use.</p>
-          <div class="about-strengths">
-            <div class="strength-item"><span class="strength-icon"><i class="fas fa-search"></i></span><div><strong>Problem-Solving First</strong><p>I dig past symptoms to find root causes &mdash; from diagnosing a 78.7% city mismatch driving system-wide logistics failures to identifying three patient cohorts behind 50%+ of adverse medication events.</p></div></div>
-            <div class="strength-item"><span class="strength-icon"><i class="fas fa-chart-line"></i></span><div><strong>Business Impact Focus</strong><p>Every project is anchored in quantified outcomes &mdash; $20&ndash;100M in healthcare savings, &pound;3&ndash;4M in pharma expansion opportunities, and operational improvements with clear ROI projections.</p></div></div>
-            <div class="strength-item"><span class="strength-icon"><i class="fas fa-comments"></i></span><div><strong>Clear Communication</strong><p>I adapt findings for any audience &mdash; turning dense analysis into narratives that resonate with both technical teams and non-technical decision-makers alike.</p></div></div>
-            <div class="strength-item"><span class="strength-icon"><i class="fas fa-layer-group"></i></span><div><strong>Adaptability &amp; Rigour</strong><p>Real-world data is messy. I thrive in that environment &mdash; extracting maximum insight from imperfect data while maintaining rigour and documenting limitations honestly.</p></div></div>
-          </div>
+          <p>I'm a data analyst based in London with a background in pharmacology and business — a combination that taught me to be both precise and practical. I got into data analytics because I love the moment when a messy, confusing dataset starts to tell a clear story.</p>
+          <p>What drives me is the question behind the question. I enjoy sitting with a business problem, understanding the context, and figuring out what the data is actually saying — not just what it appears to say on the surface. I find that the most useful analysis isn't always the most complex; it's the one that gives someone the clarity to make a better decision.</p>
+          <p>I work across different industries and I like it that way. Each sector brings a different kind of problem, and I enjoy the challenge of adapting — learning the language of a new domain and finding where data can genuinely make a difference.</p>
           <div class="about-tags">
             <span class="about-tag">Master Data Analyst &middot; 10Alytics</span>
             <span class="about-tag">MBA &middot; University of East London</span>
@@ -646,8 +640,7 @@
           </div>
         </div>
 
-      <!-- Disclaimer -->
-      <div class="disclaimer-banner"><p><strong>Note:</strong> All projects use publicly available, anonymised, or synthetic datasets for demonstration purposes only.</p></div>
+      
     </div>
   </section>
 
@@ -657,7 +650,8 @@
       <h2 class="section-title">My Projects</h2>
       <span class="section-rule"></span>
 
-            <div class="projects-grid">
+            <p class="projects-note"><i class="fas fa-info-circle"></i> Projects are analytical case studies using publicly available or synthetic datasets.</p>
+      <div class="projects-grid">
 
         <!-- SwiftRoute -->
         <div class="project-card">
@@ -858,7 +852,7 @@
         </div>
       </form>
 
-      <script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
           e.preventDefault();
           const name    = document.getElementById('name').value.trim();
@@ -875,7 +869,4 @@
   <!-- ══════════════ FOOTER ═════════════════════ -->
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
-  </footer>
-</body>
-</html>
+    <p>Data Analyst &
