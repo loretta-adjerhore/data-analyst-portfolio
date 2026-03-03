@@ -571,6 +571,13 @@
     #header .speciality { animation: fadeUp 0.7s 0.25s ease both; }
     .social-icons { animation: fadeUp 0.7s 0.35s ease both; }
     #header nav   { animation: fadeUp 0.7s 0.45s ease both; }
+
+    .about-strengths { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 20px 0 24px; }
+    .strength-item { display: flex; gap: 14px; align-items: flex-start; }
+    .strength-icon { color: var(--gold); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0; width: 20px; text-align: center; }
+    .strength-item strong { display: block; font-size: 0.92rem; color: var(--dark); margin-bottom: 4px; }
+    .strength-item p { font-size: 0.85rem; color: var(--soft); margin: 0; line-height: 1.6; }
+    @media (max-width: 600px) { .about-strengths { grid-template-columns: 1fr; } }
   </style>
 </head>
 
@@ -580,7 +587,7 @@
   <header id="header">
     <h1>Loretta Adjerhore</h1>
     <p class="subtitle">Data Analyst &nbsp;|&nbsp; SQL &nbsp;·&nbsp; Power BI &nbsp;·&nbsp; Python &nbsp;·&nbsp; Tableau</p>
-    <p class="speciality">Healthcare &amp; Pharmaceutical Analytics Specialist</p>
+    <p class="speciality">Data Analyst &nbsp;&middot;&nbsp; Business Intelligence &nbsp;&middot;&nbsp; Insights</p>
 
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/loretta-adjerhore-031a84223" target="_blank" title="LinkedIn">
@@ -589,7 +596,7 @@
       <a href="https://github.com/loretta-adjerhore" target="_blank" title="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="/cdn-cgi/l/email-protection#a1cdced3c4d5d5c0c0c5cbc4d3c9ced3c4e1c6ccc0c8cd8fc2cecc" title="Email">
+      <a href="mailto:lorettaadjerhore@gmail.com" title="Email">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
@@ -613,7 +620,7 @@
       <div class="about-grid">
         <div class="about-photo">
           <!-- Replace src with your actual photo: images/profile.jpg -->
-          <img src="images/Loretta's photo.jpeg"
+          <img src="images/profile.jpg"
                alt="Loretta Adjerhore"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="photo-placeholder" style="display:none;">
@@ -623,32 +630,24 @@
 
         <div class="about-text">
           <h3>Hello, I'm Loretta</h3>
-          <p>
-            I'm a data analyst passionate about turning raw data into clear, meaningful insights that help organisations make better decisions. I enjoy the process of looking at a dataset and finding the story hidden within it.
-          </p>
-          <p>
-            My work involves building interactive dashboards, analysing trends, and presenting findings in a way that is easy to understand — whether the audience is a data team or a business leader with no technical background. I work across sectors including healthcare, retail, logistics, and HR.
-          </p>
-          <p>
-            This portfolio is a collection of projects I have worked on that demonstrate how data analysis can solve real business problems. Each project tells a story — from identifying a gap, to exploring the data, to recommending a clear path forward.
-          </p>
-
+          <p>I specialise in transforming complex datasets into strategic insights that drive confident business decisions. My work spans healthcare analytics, pharmaceutical distribution, retail performance, and logistics operations &mdash; always with a focus on delivering measurable, clearly communicated impact.</p>
+          <p>I believe great analytics is about more than technical proficiency. It&rsquo;s about understanding the business context, asking the right questions, and delivering findings that stakeholders can actually use.</p>
+          <div class="about-strengths">
+            <div class="strength-item"><span class="strength-icon"><i class="fas fa-search"></i></span><div><strong>Problem-Solving First</strong><p>I dig past symptoms to find root causes &mdash; from diagnosing a 78.7% city mismatch driving system-wide logistics failures to identifying three patient cohorts behind 50%+ of adverse medication events.</p></div></div>
+            <div class="strength-item"><span class="strength-icon"><i class="fas fa-chart-line"></i></span><div><strong>Business Impact Focus</strong><p>Every project is anchored in quantified outcomes &mdash; $20&ndash;100M in healthcare savings, &pound;3&ndash;4M in pharma expansion opportunities, and operational improvements with clear ROI projections.</p></div></div>
+            <div class="strength-item"><span class="strength-icon"><i class="fas fa-comments"></i></span><div><strong>Clear Communication</strong><p>I adapt findings for any audience &mdash; turning dense analysis into narratives that resonate with both technical teams and non-technical decision-makers alike.</p></div></div>
+            <div class="strength-item"><span class="strength-icon"><i class="fas fa-layer-group"></i></span><div><strong>Adaptability &amp; Rigour</strong><p>Real-world data is messy. I thrive in that environment &mdash; extracting maximum insight from imperfect data while maintaining rigour and documenting limitations honestly.</p></div></div>
+          </div>
           <div class="about-tags">
-            <span class="about-tag">Master Data Analyst · 10Alytics</span>
-            <span class="about-tag">MBA · University of East London</span>
-            <span class="about-tag">SQL · Power BI · Tableau · Python</span>
+            <span class="about-tag">Master Data Analyst &middot; 10Alytics</span>
+            <span class="about-tag">MBA &middot; University of East London</span>
+            <span class="about-tag">SQL &middot; Power BI &middot; Tableau &middot; Python</span>
             <span class="about-tag">London, UK</span>
           </div>
         </div>
-      </div>
 
       <!-- Disclaimer -->
-      <div class="disclaimer-banner">
-        <p>
-          <strong>Portfolio Disclaimer:</strong>
-          All datasets used in these projects are publicly available, anonymised, or synthetic datasets created for analytical demonstration purposes. No real patient data, proprietary company information, or confidential records have been used. Projects are presented as analytical case studies only.
-        </p>
-      </div>
+      <div class="disclaimer-banner"><p><strong>Note:</strong> All projects use publicly available, anonymised, or synthetic datasets for demonstration purposes only.</p></div>
     </div>
   </section>
 
@@ -876,4 +875,7 @@
   <!-- ══════════════ FOOTER ═════════════════════ -->
   <footer>
     <p class="fname">Loretta Adjerhore</p>
-    <p>Data Analyst &middot; London, UK &middot; <a href="/cdn-cgi/l/email-protection#1e72716c7b6a6a7f7f7a747b6c76716c7b5e79737f7772307d7173" style="color:#C19A5B;"><span class="_
+    <p>Data Analyst &middot; London, UK &middot; <a href="mailto:lorettaadjerhore@gmail.com" style="color:#C19A5B;">lorettaadjerhore@gmail.com</a></p>
+  </footer>
+</body>
+</html>
